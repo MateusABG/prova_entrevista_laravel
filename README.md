@@ -17,7 +17,7 @@ Nesta prova, foi feita uma aplicação WEB que possui as seguintes característi
 
 Para que seja possível utilizar o banco de dados, é necessário utilizar o terminal e a ferramenta **artisan**, via comando **php artisan migrate**, via este comando, todos os programas já criados irão gerar os bancos de dados necessários para o funcionamento da aplicação.
 
-Além disso é necessário adicionar o schema o qual será utilizado no arquivo **.env** na seção abaixo:
+Além disso é necessário adicionar o schema o qual será utilizado no arquivo **.env** na seção abaixo:<br>
 ![image](https://github.com/MateusABG/prova_entrevista_laravel/assets/50017946/f71df8ec-2228-4e16-be13-6a3d3cda390a)
 
 Ao adicionar estes dados, será possível utilizar a aplicação, inicializando-a via servidor local. 
@@ -78,7 +78,7 @@ As páginas encontradas nesta aplicação são:
 <ul>
     <li>
         <bold> Página Inicial </bold>: Esta página é onde será encontrada a listagem de pedidos registrados e acesso a área de listagem de clientes e adição de novos pedidos.
-        ![image](https://github.com/MateusABG/prova_entrevista_laravel/assets/50017946/9cff1860-7ba2-4be8-9b6d-c65380837034)
+        <img src="![image](https://github.com/MateusABG/prova_entrevista_laravel/assets/50017946/9cff1860-7ba2-4be8-9b6d-c65380837034)"/>
 
     </li>
     <li>
