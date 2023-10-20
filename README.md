@@ -36,6 +36,7 @@ As APIs encontradas nesta aplicação são, de acordo com o caminho citado abaix
                 }
             </code>
     </li>
+                        
     <li>
         localhost/<pasta da aplicação>/public/api/clientes/{id}/update -> Esta API é responsável pela atualização de dados de cliente (Nome) no banco de dados, através da recepção de um json com os seguintes dados, sendo executado a partir de um pedido via POST:
             <code>
@@ -44,6 +45,7 @@ As APIs encontradas nesta aplicação são, de acordo com o caminho citado abaix
                 }
             </code>
     </li>
+    
     <li>
         localhost/<pasta da aplicação>/public/api/clientes/{id}/delete -> Esta API é responsável pela deleção de cliente do banco de dados, sendo este executado a partir de um pedido via DELETE
     </li>
@@ -57,9 +59,9 @@ As APIs encontradas nesta aplicação são, de acordo com o caminho citado abaix
                             "data_entrega": {data de entrega}
                         }
                     </code>
-                    </li>
-    <li> 
+    </li>
     
+    <li> 
          localhost/<pasta da aplicação>/public/api/pedidos -> Esta API é responsável pela ataualização de dados de Pedido (ID Usuário,Data de Entrega,Valor de Frete) no banco de dados, através da recepção de um json com os seguintes dados, sendo executado a partir de um pedido via POST:
                     <code>
                         {
@@ -73,7 +75,6 @@ As APIs encontradas nesta aplicação são, de acordo com o caminho citado abaix
     <li>
         localhost/<pasta da aplicação>/public/api/pedidos/{id}/delete -> Esta API é responsável pela deleção de um pedido do banco de dados, sendo este executado a partir de um pedido via DELETE
     </li>
-
 </ul>
 
 ## Páginas
@@ -81,9 +82,24 @@ As páginas encontradas nesta aplicação são:
 
 <ul>
     <li>
-        <bold> Página Inicial </bold>: Esta página é onde será encontrada a listagem de pedidos registrados e acesso a área de listagem de clientes e adição de novos pedidos. Além disso, na listagem, na ultima coluna encontrada na tabela de pedidos, se encontram duas possíveis ações: a de edição, ao qual leva o usuário a área de edição de dados do pedido, assim como a ação de deleção, o qual deleta o dado da coluna indicada.
+        <bold> Página Inicial </bold>: Esta página é onde se encontra a listagem de pedidos registrados e acesso a área de listagem de clientes e adição de novos pedidos. Além disso, na listagem, na ultima coluna encontrada na tabela de pedidos, se encontram duas possíveis ações: a de edição, ao qual leva o usuário a área de edição de dados do pedido, assim como a ação de deleção, o qual deleta o dado da coluna indicada.
     </li>
     <li>
-        <bold> Página de Listagem de Clientes </bold>: Esta página é onde será encontrada a listagem de pedidos registrados e acesso a área de listagem de clientes e adição de novos pedidos.
+        <bold> Página de Listagem de Clientes </bold>: Esta página é onde se encontra a listagem de pedidos registrados e acesso a área de listagem de clientes e adição de novos pedidos. Nesta página é possível realizar a adição de novos clientes, além de possuir a possibilidade de deletá-los, assim também deletando todos os pedidos os quais eram relacionados a ele, assim como redirecionar a tela de edição de dados de cliente.
+    </li>
+    
+    <li>
+        <bold> Página de Adição de Clientes </bold>: Esta página é onde será encontrada a adição de dados de cliente, com um campo de texto para adição manual do nome do cliente a ser adicionado.
+    </li>
+    <li>
+        <bold> Página de Edição de Clientes </bold>: Esta página é onde será encontrada a edição de dados de cliente, com um campo de texto para adição manual do nome do cliente ao qual se deseja atualizar.
+    </li>
+
+    
+    <li>
+        <bold> Página de Adição de Pedidos </bold>: Esta página é onde será encontrada a adição de dados de cliente, com um campo de seleção do cliente do pedido, um campo de data, para adição da data de entrega, e, por fim, um campo de input de valor, para adição do valor de frete.
+    </li>
+    <li>
+        <bold> Página de Edição de Pedidos </bold>: Esta página é onde será encontrada a edição de dados de cliente, com os mesmos campos encontrados na área de adição, a fim de editar dados do pedido já registrado anteriormente.
     </li>
 </ul>
