@@ -67,10 +67,9 @@ As APIs encontradas nesta aplicação são, de acordo com o caminho citado abaix
                             "data_entrega": {data de entrega}
                         }
                     </code>
-                    
     </li>
     <li>
-        localhost/<pasta da aplicação>/public/api/pedidos/{id}/delete -> Esta API é responsável pela deleção de um pedido do banco de dados, sendo este executado a partir de um pedido via DELETE
+        localhost/<pasta da aplicação>/public/api/pedidos/{id}/delete -> Esta API é responsável pela deleção de um pedido do banco de dados, sendo este executado a partir de um pedido via DELETE 
     </li>
 </ul>
 
