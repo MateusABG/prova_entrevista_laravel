@@ -39,7 +39,7 @@ class PedidosController extends Controller
                         'valor_frete' => $request->valor_frete,
                         'data_entrega' => $request->data_entrega
                     ]
-                );
+                ); 
 
                 if ($pedido) {
                     $data = [
