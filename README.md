@@ -44,37 +44,7 @@ As APIs encontradas nesta aplicação são, de acordo com o caminho citado abaix
                     "name":<Nome aqui>
                 }
             </code>
-    </li>
-    
-    <li>
-        localhost/<pasta da aplicação>/public/api/clientes/{id}/delete -> Esta API é responsável pela deleção de cliente do banco de dados, sendo este executado a partir de um pedido via DELETE
-    </li>
-            
-    <li>
-         localhost/<pasta da aplicação>/public/api/pedidos -> Esta API é responsável pela inserção de dados de Pedido (ID,ID Usuário,Data de Entrega,Valor de Frete) no banco de dados, através da recepção de um json com os seguintes dados, sendo executado a partir de um pedido via POST:
-                    <code>
-                        {
-                            "id_cliente": {id do cliente},
-                            "valor_frete": {valor do frete},
-                            "data_entrega": {data de entrega}
-                        }
-                    </code>
-    </li>
-    
-    <li> 
-         localhost/<pasta da aplicação>/public/api/pedidos -> Esta API é responsável pela ataualização de dados de Pedido (ID Usuário,Data de Entrega,Valor de Frete) no banco de dados, através da recepção de um json com os seguintes dados, sendo executado a partir de um pedido via POST:
-                    <code>
-                        {
-                            "id_cliente": {id do cliente},
-                            "valor_frete": {valor do frete},
-                            "data_entrega": {data de entrega}
-                        }
-                    </code>
-                    
-    </li>
-    <li>
-        localhost/<pasta da aplicação>/public/api/pedidos/{id}/delete -> Esta API é responsável pela deleção de um pedido do banco de dados, sendo este executado a partir de um pedido via DELETE
-    </li>
+    </li> 
 </ul>
 
 ## Páginas
