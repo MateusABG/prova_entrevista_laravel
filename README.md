@@ -13,6 +13,7 @@ Nesta prova, foi feita uma aplicação WEB que possui as seguintes característi
         Listagem de pedidos e clientes disponíveis no sistema
     </li>
 </ul>
+
 ## Como adicionar banco de dados (Laravel)
 
 Para que seja possível utilizar o banco de dados, é necessário utilizar o terminal e a ferramenta **artisan**, via comando **php artisan migrate**, via este comando, todos os programas já criados irão gerar os bancos de dados necessários para o funcionamento da aplicação.
@@ -33,8 +34,7 @@ As APIs encontradas nesta aplicação são, de acordo com o caminho citado abaix
                 {
                     "name":<Nome aqui>
                 }
-    </li>
-                        
+    </li>    
     <li>
         localhost/<pasta da aplicação>/public/api/clientes/{id}/update -> Esta API é responsável pela atualização de dados de cliente (Nome) no banco de dados, através da recepção de um json com os seguintes dados, sendo executado a partir de um pedido via POST:
             <code>
@@ -42,13 +42,10 @@ As APIs encontradas nesta aplicação são, de acordo com o caminho citado abaix
                     "name":<Nome aqui>
                 }
             </code>
-    </li> 
-    
-    
+    </li>
     <li>
         localhost/<pasta da aplicação>/public/api/clientes/{id}/delete -> Esta API é responsável pela deleção de cliente do banco de dados, sendo este executado a partir de um pedido via DELETE
-    </li>
-            
+    </li>   
     <li>
          localhost/<pasta da aplicação>/public/api/pedidos -> Esta API é responsável pela inserção de dados de Pedido (ID,ID Usuário,Data de Entrega,Valor de Frete) no banco de dados, através da recepção de um json com os seguintes dados, sendo executado a partir de um pedido via POST:
                     <code>
@@ -59,7 +56,6 @@ As APIs encontradas nesta aplicação são, de acordo com o caminho citado abaix
                         }
                     </code>
     </li>
-    
     <li> 
          localhost/<pasta da aplicação>/public/api/pedidos -> Esta API é responsável pela ataualização de dados de Pedido (ID Usuário,Data de Entrega,Valor de Frete) no banco de dados, através da recepção de um json com os seguintes dados, sendo executado a partir de um pedido via POST:
                     <code>
@@ -86,15 +82,12 @@ As páginas encontradas nesta aplicação são:
     <li>
         <bold> Página de Listagem de Clientes </bold>: Esta página é onde se encontra a listagem de pedidos registrados e acesso a área de listagem de clientes e adição de novos pedidos. Nesta página é possível realizar a adição de novos clientes, além de possuir a possibilidade de deletá-los, assim também deletando todos os pedidos os quais eram relacionados a ele, assim como redirecionar a tela de edição de dados de cliente.
     </li>
-    
     <li>
         <bold> Página de Adição de Clientes </bold>: Esta página é onde será encontrada a adição de dados de cliente, com um campo de texto para adição manual do nome do cliente a ser adicionado.
     </li>
     <li>
         <bold> Página de Edição de Clientes </bold>: Esta página é onde será encontrada a edição de dados de cliente, com um campo de texto para adição manual do nome do cliente ao qual se deseja atualizar.
     </li>
-
-    
     <li>
         <bold> Página de Adição de Pedidos </bold>: Esta página é onde será encontrada a adição de dados de cliente, com um campo de seleção do cliente do pedido, um campo de data, para adição da data de entrega, e, por fim, um campo de input de valor, para adição do valor de frete.
     </li>
