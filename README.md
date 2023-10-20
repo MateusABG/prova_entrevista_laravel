@@ -57,6 +57,7 @@ As APIs encontradas nesta aplicação são, de acordo com o caminho citado abaix
                             "data_entrega": {data de entrega}
                         }
                     </code>
+                    </li>
     <li> 
     
          localhost/<pasta da aplicação>/public/api/pedidos -> Esta API é responsável pela ataualização de dados de Pedido (ID Usuário,Data de Entrega,Valor de Frete) no banco de dados, através da recepção de um json com os seguintes dados, sendo executado a partir de um pedido via POST:
