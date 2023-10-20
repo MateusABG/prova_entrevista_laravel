@@ -31,9 +31,11 @@ As APIs encontradas nesta aplicação são, de acordo com o caminho citado abaix
 <ul>
     <li>
         localhost/<pasta da aplicação>/public/api/cliente -> Esta API é responsável pela inserção de dados de cliente (Nome e ID) no banco de dados, através da recepção de um json com os seguintes dados, sendo executado a partir de um pedido via POST:
+            <code>
                 {
                     "name":<Nome aqui>
                 }
+            </code> 
     </li>    
     <li>
         localhost/<pasta da aplicação>/public/api/clientes/{id}/update -> Esta API é responsável pela atualização de dados de cliente (Nome) no banco de dados, através da recepção de um json com os seguintes dados, sendo executado a partir de um pedido via POST:
