@@ -55,8 +55,7 @@ As APIs encontradas nesta aplicação são, de acordo com o caminho citado abaix
                             "data_entrega": {data de entrega}
                         }
                     </code>
-    <li>
-    </li>
+    <li> 
     
          localhost/<pasta da aplicação>/public/api/pedidos -> Esta API é responsável pela ataualização de dados de Pedido (ID Usuário,Data de Entrega,Valor de Frete) no banco de dados, através da recepção de um json com os seguintes dados, sendo executado a partir de um pedido via POST:
                     <code>
@@ -66,6 +65,8 @@ As APIs encontradas nesta aplicação são, de acordo com o caminho citado abaix
                             "data_entrega": {data de entrega}
                         }
                     </code>
+                    
+    </li>
     <li>
         localhost/<pasta da aplicação>/public/api/pedidos/{id}/delete -> Esta API é responsável pela deleção de um pedido do banco de dados, sendo este executado a partir de um pedido via DELETE
     </li>
@@ -77,13 +78,9 @@ As páginas encontradas nesta aplicação são:
 
 <ul>
     <li>
-        <bold> Página Inicial </bold>: Esta página é onde será encontrada a listagem de pedidos registrados e acesso a área de listagem de clientes e adição de novos pedidos.
-        <img src="![image](https://github.com/MateusABG/prova_entrevista_laravel/assets/50017946/9cff1860-7ba2-4be8-9b6d-c65380837034)"/>
-
+        <bold> Página Inicial </bold>: Esta página é onde será encontrada a listagem de pedidos registrados e acesso a área de listagem de clientes e adição de novos pedidos. Além disso, na listagem, na ultima coluna encontrada na tabela de pedidos, se encontram duas possíveis ações: a de edição, ao qual leva o usuário a área de edição de dados do pedido, assim como a ação de deleção, o qual deleta o dado da coluna indicada.
     </li>
     <li>
-        <bold> Página Inicial </bold>: Esta página é onde será encontrada a listagem de pedidos registrados e acesso a área de listagem de clientes e adição de novos pedidos.
-        
-
+        <bold> Página de Listagem de Clientes </bold>: Esta página é onde será encontrada a listagem de pedidos registrados e acesso a área de listagem de clientes e adição de novos pedidos.
     </li>
 </ul>
