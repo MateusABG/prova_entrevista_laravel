@@ -1,4 +1,4 @@
-![image](https://github.com/MateusABG/prova_entrevista_laravel/assets/50017946/6b753b7c-480f-4e19-95bd-8a5493822973)# Prova para Vaga: Desenvolvedor PHP [Brudam]
+# Prova para Vaga: Desenvolvedor PHP [Brudam]
 
 ## O que foi feito:
 Nesta prova, foi feita uma aplicação WEB que possui as seguintes características:
@@ -29,13 +29,47 @@ Para o teste das APIs, encontradas no caminho **localhost/<pasta da aplicação>
 As APIs encontradas nesta aplicação são, de acordo com o caminho citado abaixo:
 <ul>
     <li>
-        localhost/<pasta da aplicação>/public/api/cliente -> Esta API é responsável pela inserção de dados de cliente (Nome e ID) no banco de dados, através da recepção de um json com o seguinte dado
+        localhost/<pasta da aplicação>/public/api/cliente -> Esta API é responsável pela inserção de dados de cliente (Nome e ID) no banco de dados, através da recepção de um json com os seguintes dados, sendo executado a partir de um pedido via POST:
             <code>
                 {
                     "name":<Nome aqui>
                 }
             </code>
     </li>
+    <li>
+        localhost/<pasta da aplicação>/public/api/clientes/{id}/update -> Esta API é responsável pela atualização de dados de cliente (Nome) no banco de dados, através da recepção de um json com os seguintes dados, sendo executado a partir de um pedido via POST:
+            <code>
+                {
+                    "name":<Nome aqui>
+                }
+            </code>
+    </li>
+    <li>
+        localhost/<pasta da aplicação>/public/api/clientes/{id}/delete -> Esta API é responsável pela deleção de cliente do banco de dados, sendo este executado a partir de um pedido via DELETE
+    </li>
+         localhost/<pasta da aplicação>/public/api/pedidos -> Esta API é responsável pela inserção de dados de Pedido (ID,ID Usuário,Data de Entrega,Valor de Frete) no banco de dados, através da recepção de um json com os seguintes dados, sendo executado a partir de um pedido via POST:
+                    <code>
+                        {
+                            "id_cliente": {id do cliente},
+                            "valor_frete": {valor do frete},
+                            "data_entrega": {data de entrega}
+                        }
+                    </code>
+    <li>
+    </li>
+    
+         localhost/<pasta da aplicação>/public/api/pedidos -> Esta API é responsável pela ataualização de dados de Pedido (ID Usuário,Data de Entrega,Valor de Frete) no banco de dados, através da recepção de um json com os seguintes dados, sendo executado a partir de um pedido via POST:
+                    <code>
+                        {
+                            "id_cliente": {id do cliente},
+                            "valor_frete": {valor do frete},
+                            "data_entrega": {data de entrega}
+                        }
+                    </code>
+    <li>
+        localhost/<pasta da aplicação>/public/api/pedidos/{id}/delete -> Esta API é responsável pela deleção de um pedido do banco de dados, sendo este executado a partir de um pedido via DELETE
+    </li>
+
 </ul>
 
 ## Páginas
@@ -43,6 +77,13 @@ As páginas encontradas nesta aplicação são:
 
 <ul>
     <li>
-        <bold> Página Inicial </bold>: Esta página é onde será encontrada a listagem de pedidos registrados.
+        <bold> Página Inicial </bold>: Esta página é onde será encontrada a listagem de pedidos registrados e acesso a área de listagem de clientes e adição de novos pedidos.
+        ![image](https://github.com/MateusABG/prova_entrevista_laravel/assets/50017946/9cff1860-7ba2-4be8-9b6d-c65380837034)
+
+    </li>
+    <li>
+        <bold> Página Inicial </bold>: Esta página é onde será encontrada a listagem de pedidos registrados e acesso a área de listagem de clientes e adição de novos pedidos.
+        
+
     </li>
 </ul>
